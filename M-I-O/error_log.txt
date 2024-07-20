@@ -1,0 +1,72 @@
+Traceback (most recent call last):
+  File "c:\Users\micha\OneDrive\Escritorio\M-I-O\utils.py", line 41, in format_disk_windows
+    subprocess.run(["diskpart", "/s", "diskpart_script.txt"], check=True, shell=True)
+  File "C:\Users\micha\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['diskpart', '/s', 'diskpart_script.txt']' returned non-zero exit status 2147942487.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\micha\OneDrive\Escritorio\M-I-O\ui.py", line 23, in run
+    format_disk_windows(self.disk_letter, self.disk_name, self.partition_scheme)
+  File "c:\Users\micha\OneDrive\Escritorio\M-I-O\utils.py", line 43, in format_disk_windows
+    raise RuntimeError(f"Error al ejecutar diskpart: {e}")
+RuntimeError: Error al ejecutar diskpart: Command '['diskpart', '/s', 'diskpart_script.txt']' returned non-zero exit status 2147942487.
+
+Traceback (most recent call last):
+  File "c:\Users\micha\OneDrive\Escritorio\M-I-O\utils.py", line 35, in format_disk_windows
+    raise Exception(f"Error al ejecutar Diskpart: {result.stderr}")
+Exception: Error al ejecutar Diskpart: 
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\micha\OneDrive\Escritorio\M-I-O\ui.py", line 23, in run
+    format_disk_windows(self.disk_letter, self.disk_name, self.partition_scheme)
+  File "c:\Users\micha\OneDrive\Escritorio\M-I-O\utils.py", line 37, in format_disk_windows
+    raise Exception(f"Error al formatear el disco: {e}")
+Exception: Error al formatear el disco: Error al ejecutar Diskpart: 
+
+Traceback (most recent call last):
+  File "c:\Users\micha\OneDrive\Escritorio\M-I-O\utils.py", line 35, in format_disk_windows
+    raise Exception(f"Error al ejecutar Diskpart: {result.stderr}")
+Exception: Error al ejecutar Diskpart: 
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\micha\OneDrive\Escritorio\M-I-O\ui.py", line 23, in run
+    format_disk_windows(self.disk_letter, self.disk_name, self.partition_scheme)
+  File "c:\Users\micha\OneDrive\Escritorio\M-I-O\utils.py", line 37, in format_disk_windows
+    raise Exception(f"Error al formatear el disco: {e}")
+Exception: Error al formatear el disco: Error al ejecutar Diskpart: 
+
+Traceback (most recent call last):
+  File "c:\Users\micha\OneDrive\Escritorio\M-I-O\utils.py", line 35, in format_disk_windows
+    raise Exception(f"Error al ejecutar Diskpart: {result.stderr}")
+Exception: Error al ejecutar Diskpart: 
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\micha\OneDrive\Escritorio\M-I-O\ui.py", line 23, in run
+    format_disk_windows(self.disk_letter, self.disk_name, self.partition_scheme)
+  File "c:\Users\micha\OneDrive\Escritorio\M-I-O\utils.py", line 37, in format_disk_windows
+    raise Exception(f"Error al formatear el disco: {e}")
+Exception: Error al formatear el disco: Error al ejecutar Diskpart: 
+
+Traceback (most recent call last):
+  File "c:\Users\micha\OneDrive\Escritorio\M-I-O\utils.py", line 35, in format_disk_windows
+    raise Exception(f"Error al ejecutar Diskpart: {result.stderr}")
+Exception: Error al ejecutar Diskpart: 
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\micha\OneDrive\Escritorio\M-I-O\ui.py", line 23, in run
+    format_disk_windows(self.disk_letter, self.disk_name, self.partition_scheme)
+  File "c:\Users\micha\OneDrive\Escritorio\M-I-O\utils.py", line 37, in format_disk_windows
+    raise Exception(f"Error al formatear el disco: {e}")
+Exception: Error al formatear el disco: Error al ejecutar Diskpart: 
+

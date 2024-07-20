@@ -1,0 +1,6 @@
+
+    select volume F:
+    format fs=ntfs quick
+    label="awawawawaw"
+    
+convert gpt
